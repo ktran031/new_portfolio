@@ -7,263 +7,307 @@
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
 		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
-       		<link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
-			<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-			<link rel="stylesheet" type="text/css" href="css/style.css">
-       
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-			<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-            <script src="js/index.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+      <script type="text/javascript" src="fancybox/lib/jquery-1.10.1.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="js/index.js"></script>
+      <script type="text/javascript" src="fancybox/source/jquery.fancybox.js"></script>
+      <link rel="stylesheet" type="text/css" href="fancybox/source/jquery.fancybox.css" media="screen" />
+      <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <script src="http://maps.googleapis.com/maps/api/js"></script>
+      
+      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      
+
+      <!-- FANCY BOXX -->
+
+
+
+
 	</head>
-	<body class="home page page-id-2 page-template-default logged-in admin-bar customize-support">
+	<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
     
     
     
-<header id="main-header">
-	<div class="container">
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#myPage">K|T</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#services">SERVICES</a></li>
+        <li><a href="#portfolio">PORTFOLIO</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+        <li><a href="#resume">RESUME</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
     
-		<div class="col-sm-4">
-        <h3><a href="#" id="logo">Khoi Tran<br />Web Developer </a></h3>
-        </div>
-        <div class="col-sm-8">
-          <div class="social-buttons pull-right hidden-xs hidden-sm">
+
+    
+    
+    
+
+<!--   <div class="fullscreen-bg">
+    <video loop muted autoplay  class="fullscreen-bg__video">
+        <source src="video/bgvideo-1.mp4" type="video/mp4">
+        <source src="video/bgvideo-1.ogv" type="video/ogg">
+        <source src="video/bgvideo-1.mov" type="video/mov">
+        
+    </video>
+  </div> -->
+
+
+<div class="jumbotron container-fluid text-center">
+  <h1>Hello World!</h1>
+  
+ 
+</div>
+
+<div id="banner" class="text-center container-fluid">
+  <h2>Khoi Tran <hr><hr>Front End Web Developer</h2>
+   
+  <div class="video-background">
+  <div class="video-foreground">
+      <video class="bgvid" video loop muted autoplay>
+        <source src="video/bgvideo-1.mp4" type="video/mp4">
+        <source src="video/bgvideo-1.ogv" type="video/ogg">
+        <source src="video/bgvideo-1.mov" type="video/mov">
+        
+      </video>
+   </div>
+  </div>
+
+
+  <div class="container-fluid">
+      <div class="col-sm-12">
+        <div class="social-buttons pull-right hidden-xs hidden-sm">
           <a href="#" class="social-button facebook"><i class="fa fa-facebook"></i></a>
           <a href="#" class="social-button twitter"><i class="fa fa-linkedin"></i></a>
           <a href="#" class="social-button google"><i class="fa fa-instagram"></i></a>
           <a href="#" class="social-button dribbble"><i class="fa fa-envelope"></i></a>
+        </div>    
+      </div>
+  </div>  
 </div>
-	
-    	  	
-        </div>
-     
-    </header>
+
+
+
+    
+
     
    
-<!-- 	<nav class="navbar navbar-inverse navbar-static-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">K | T</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#portfolio">Portfolio</a></li> 
-      <li><a href="#contact">Contact</a></li> 
-    </ul>
-  </div>
-</nav> -->
-    
-    <div class="navbar navbar-inverse navbar-static-top">
-   	<div class="container">
-
-   		<a href="#" class = "navbar-brand">K|T</a>
-
-   		<button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
-   			<span class = "icon-bar"></span>
-   			<span class = "icon-bar"></span>
-   			<span class = "icon-bar"></span>
-   		</button>
-
-   		<div class = "collapse navbar-collapse navHeaderCollapse">
-   			<ul class = "nav navbar-nav navbar-right">
-
-   				<li class = "active"><a href="#BannerWrapper" class="active" title="Next Section">Home</a></li>
-        		<li><a href="#about" title="Next Section">About</a></li>
-    			<li><a href="#portfolio" title="Next Section">Portfolio</a></li>
-    			<li><a href="#footer">Contact</a></li>
-   				<li><a href="resume/resume.pdf" rel="0" target="nofollow">Resume</a></li>
-
-   			</ul>
-
-   		</div>
-   	</div>
-   </div>
-    
-    
-    
-<div id="BannerWrapper">
 
 
-
-<!-- Video -->
-  <div class="fullscreen-bg">
-    <video loop muted autoplay  class="fullscreen-bg__video">
-        <source src="video/bgvideo-5.mp4" type="video/mp4">
-        <source src="video/bgvideo-5.ogv" type="video/ogg">
-        <source src="video/bgvideo-5.mov" type="video/mov">
-        
-    </video>
-  </div>
-
-
-
-
-
-    <!-- 
-      <div class="video-background">
-    <div class="video-foreground">
-  
-     <iframe loop muted autoplay id="bgvid" src="https://www.youtube.com/embed/UceRgEyfSsc?start=23&controls=0&showinfo=0&rel=0&autoplay=1&volume=0&loop=1&playlist=W0LHTWG-UmQ" frameborder="0" allowfullscreen ></iframe>
-  </div>
-  </div>      -->   
-    
-<div class="clear"></div>    
-    
-    
-</div>    
-
-<!-- Scroll To Top Button -->
       
 
-<div id="about" href="#about" class="container-fluid bg-1 text-center">
-  <h2>About Me</h2>
-    <hr id="project-hr">
-  <img src="images/khoi.jpg" class="img-circle" alt="khoi" width="150" height="150">
-<!-- </div> -->
-
-<!-- <div class="container-fluid bg-2 text-center"> -->
-  <hr id="project-hr">
-  <h3>Hello!</h3>
-
-  <p>My name is Khoi Tran and I’m a web designer/developer that is currently looking for new and challenging projects. <br />I began studying Web Design at an SEO company, landing my first job as a WordPress Web Designer.<br /> I recently graduated from the Front-End Web Development program at General Assembly.<br />I graduated from the University of California, Riverside with a B.A. in Sociology, and found my passion for web design/development<br /> reignited after helping several colleagues with their own up and coming websites.<br /> When I’m not hard at work developing new projects, you can find me at the gym trying to maintain an active <br />and healthy lifestyle where I can challenge myself physically and mentally!</p>
-  
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid bg-info">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>About Me</h2><br>
+       <h4>My name is Khoi Tran and I’m a web designer/developer that is currently looking for new and challenging projects. <br />I began studying Web Design at an SEO company, landing my first job as a WordPress Web Designer.<br /> I recently graduated from the Front-End Web Development program at General Assembly.<br />I graduated from the University of California, Riverside with a B.A. in Sociology, and found my passion for web design/development<br /> reignited after helping several colleagues with their own up and coming websites.<br /> When I’m not hard at work developing new projects, you can find me at the gym trying to maintain an active <br />and healthy lifestyle where I can challenge myself physically and mentally!</h4>
+      <br><button class="btn btn-default btn-lg">Get in Touch</button>
+    </div>
+    <div class="col-sm-4">
+       <img src="images/khoi.jpg" class="img-circle img-responsive logo" alt="khoi" width="150" height="150">
+    </div>
+  </div>
 </div>
+
+<!-- 
+<div class="paralax-2">
+  <div class="container"></div>
+</div> -->
+
+
+ 
+
+
+<!-- Container (Portfolio Section) -->
+<div id="portfolio" class="container-fluid text-center">
+  <h2>Portfolio</h2>
+  <h4>Below you can find websites that I contributed to and was heavily involved in thus far. <br />These projects demonstrate my skills using<br /> Adobe Photoshop, HTML, CSS, Javascript, and WordPress.</h4>
+  <div class="row text-center slideanim">
+
+
+
+  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+    <div class="hovereffect">
+        <img class="img-responsive" src="images/portfolio_mikelson.jpg" alt="">
+            <div class="overlay">
+                <h2>Mikelson Yachts</h2>
+                <p><a id="inline" href="#mikelson">More Info</a>
+            <div style="display:none"><div id="mikelson">Mikelson Yachts</div></div>
+          </p> 
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+    <div class="hovereffect">
+        <img class="img-responsive" src="images/portfolio_agility.jpg" alt="">
+            <div class="overlay">
+                <h2>Agility Fuel Solutions</h2>
+                <p><a id="inline" href="#data2">More Info</a>
+            <div style="display:none"><div id="data2">Agility Fuel Solutions</div></div>
+          </p> 
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+    <div class="hovereffect">
+        <img class="img-responsive" src="images/portfolio_hornburg.jpg" alt="">
+            <div class="overlay">
+                <h2>Effect 13</h2>
+        <p> 
+          <a href="#">LINK HERE</a>
+        </p> 
+            </div>
+    </div>
+  </div>
+
+  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+    <div class="hovereffect">
+        <img class="img-responsive" src="images/portfolio_covert.jpg" alt="">
+            <div class="overlay">
+                <h2>Effect 13</h2>
+        <p> 
+          <a href="#">LINK HERE</a>
+        </p> 
+            </div>
+    </div>
+  </div>
+
+  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+    <div class="hovereffect">
+        <img class="img-responsive" src="images/portfolio_dtc.jpg" alt="">
+            <div class="overlay">
+                <h2>Effect 13</h2>
+        <p> 
+          <a href="#">LINK HERE</a>
+        </p> 
+            </div>
+    </div>
+  </div>
+
+  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+    <div class="hovereffect">
+        <img class="img-responsive" src="images/portfolio_yark.jpg" alt="">
+            <div class="overlay">
+                <h2>Effect 13</h2>
+        <p> 
+          <a href="#">LINK HERE</a>
+        </p> 
+            </div>
+    </div>
+  </div>
+
+  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+    <div class="hovereffect">
+        <img class="img-responsive" src="images/portfolio_truess.jpg" alt="">
+            <div class="overlay">
+                <h2>Effect 13</h2>
+        <p> 
+          <a href="#">LINK HERE</a>
+        </p> 
+            </div>
+    </div>
+  </div>
+
+  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+    <div class="hovereffect">
+        <img class="img-responsive" src="images/portfolio_island.jpg" alt="">
+            <div class="overlay">
+                <h2>Effect 13</h2>
+        <p> 
+          <a href="#">LINK HERE</a>
+        </p> 
+            </div>
+    </div>
+  </div>
+
+	<br>
+
+  
+  </div>
+</div>
+
+  
 
 
 <div class="paralax-1">
   <div class="container"></div>
 </div>
 
-
-<div  id="portfolio" href="#portfolio" class="container-fluid bg-3 text-center">
-  <h2>Portfolio</h2>
-  <hr id="project-hr">
-  <p>Below you can find websites that I contributed to and was heavily involved in thus far. <br />These projects demonstrate my skills using<br /> Adobe Photoshop, HTML, CSS, Javascript, and WordPress.
-  <hr id="project-hr">
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center">CONTACT</h2>
   <div class="row">
-
-    <div class="contentboxo" class="col-sm-4"> 
-      <div class="imgdisplay">
-      <a href="http://truessapparel.com/" target="_blank">
-      <img src="images/portfolio01.jpg" alt="Image" width="100%" >
-		<div class="info">
-            <p>Truess Apparel <br><br> <span class="highlight">Helped built an E-Commerce Site for a Fitness Clothing Brand through Shopify.</span></p>
-          </div>
-	  </a>
+    <div class="col-sm-5">
+      <p><span class="glyphicon glyphicon-map-marker"></span> CA, US</p>
+      <p><span class="glyphicon glyphicon-phone"></span>(714) 421-0767</p>
+      <p><span class="glyphicon glyphicon-envelope"></span>ktran031@gmail.com</p>
+    </div>
+    <div class="col-sm-7 slideanim">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
       </div>
-	</div>
-
- <div class="contentboxo" class="col-sm-4"> 
-      <div class="imgdisplay">
-      <a href="http://truessapparel.com/" target="_blank">
-      <img src="images/portfolio01.jpg" alt="Image" width="100%" >
-		<div class="info">
-            <p>Truess Apparel <br><br> <span class="highlight">Helped built an E-Commerce Site for a Fitness Clothing Brand through Shopify.</span></p>
-          </div>
-	  </a>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
       </div>
-	</div>
-
-	<div class="contentboxo" class="col-sm-4"> 
-      <div class="imgdisplay">
-      <a href="http://truessapparel.com/" target="_blank">
-      <img src="images/portfolio01.jpg" alt="Image" width="100%" >
-		<div class="info">
-            <p>Truess Apparel <br><br> <span class="highlight">Helped built an E-Commerce Site for a Fitness Clothing Brand through Shopify.</span></p>
-          </div>
-	  </a>
-      </div>
-	</div>
-
-	<div class="contentboxo" class="col-sm-4"> 
-      <div class="imgdisplay">
-      <a href="http://truessapparel.com/" target="_blank">
-      <img src="images/portfolio01.jpg" alt="Image" width="100%" >
-		<div class="info">
-            <p>Truess Apparel <br><br> <span class="highlight">Helped built an E-Commerce Site for a Fitness Clothing Brand through Shopify.</span></p>
-          </div>
-	  </a>
-      </div>
-	</div>
-
-	<div class="contentboxo" class="col-sm-4"> 
-      <div class="imgdisplay">
-      <a href="http://truessapparel.com/" target="_blank">
-      <img src="images/portfolio01.jpg" alt="Image" width="100%" >
-		<div class="info">
-            <p>Truess Apparel <br><br> <span class="highlight">Helped built an E-Commerce Site for a Fitness Clothing Brand through Shopify.</span></p>
-          </div>
-	  </a>
-      </div>
-	</div>
-
-	<div class="contentboxo" class="col-sm-4"> 
-      <div class="imgdisplay">
-      <a href="http://truessapparel.com/" target="_blank">
-      <img src="images/portfolio01.jpg" alt="Image" width="100%" >
-		<div class="info">
-            <p>Truess Apparel <br><br> <span class="highlight">Helped built an E-Commerce Site for a Fitness Clothing Brand through Shopify.</span></p>
-          </div>
-	  </a>
-      </div>
-	</div>
-
-	<div class="contentboxo" class="col-sm-4"> 
-      <div class="imgdisplay">
-      <a href="http://truessapparel.com/" target="_blank">
-      <img src="images/portfolio01.jpg" alt="Image" width="100%" height="100%" >
-		<div class="info">
-            <p>Truess Apparel <br><br> <span class="highlight">Helped built an E-Commerce Site for a Fitness Clothing Brand through Shopify.</span></p>
-          </div>
-	  </a>
-      </div>
-	</div>
-
-	<div class="contentboxo" class="col-sm-4"> 
-      <div class="imgdisplay">
-      <a href="http://truessapparel.com/" target="_blank">
-      <img src="images/portfolio01.jpg" alt="Image" width="100%" >
-		<div class="info">
-            <p>Truess Apparel <br><br> <span class="highlight">Helped built an E-Commerce Site for a Fitness Clothing Brand through Shopify.</span></p>
-          </div>
-	  </a>
-      </div>
-	</div>
-
-
-
+    </div>
   </div>
 </div>
 
-
-<div class="paralax-2">
-  <div class="container"></div>
-</div>
-
-
-
-<footer id="footer">
-
-        <div class="container">
-          <div class="col-sm-12">
-          <div class="social-buttons pull-right hidden-xs hidden-sm">
+<div class="container-fluid paralax-1">
+      <div class="col-sm-12">
+        <div class="social-buttons pull-right hidden-xs hidden-sm">
           <a href="#" class="social-button facebook"><i class="fa fa-facebook"></i></a>
           <a href="#" class="social-button twitter"><i class="fa fa-linkedin"></i></a>
           <a href="#" class="social-button google"><i class="fa fa-instagram"></i></a>
           <a href="#" class="social-button dribbble"><i class="fa fa-envelope"></i></a>
+        </div>    
+      </div>
+  </div>  
 
-          
+<footer class="container-fluid paralax-1 text-center">
 
-          </div>
-          <div class="col-sm-12">
-           <h4>&copy; Copyright 2016 Khoi Tran</h4>
-          </div>
-          </div>
-  		</div>
 
+
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>2016 Copyright Khoi</p>
+  
+  
+  
 </footer>
 
-	</body>
+       
+
+
+
+</body>
     
     
 </html>
