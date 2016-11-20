@@ -188,7 +188,9 @@ hr {
   color:#fff;
 }
 
-
+.img-responsive {
+  padding: 5px;
+}
 @media (min-aspect-ratio: 16/9) {
   .video-foreground { height: 300%; top: -100%; }
 }
