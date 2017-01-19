@@ -39,34 +39,6 @@ hr {
   
  }
 
-    .paralax-1 {
-    background-image:url("../images/earth.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: 50% 50%;
-    color: white;
-    font-family: "Avenir Next", Arial, Helvetica, sans-serif;
-    text-align: center;
-    padding: 12% 0;
- }
-
-  .paralax-2 {
-  background-image: url("../images/space.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: 50% 50%;
-    color: white;
-    font-family: "Avenir Next", Arial, Helvetica, sans-serif;
-    text-align: center;
-    padding: 12% 0;
-}
-
-#banner h2 {
-  color: #fff;
-}
-
 .social-buttons {
   
   margin: auto;
@@ -156,76 +128,6 @@ hr {
           transform: scale(1);
 }
 
-.fancybox-custom .fancybox-skin {
-      box-shadow: 0 0 50px #222;
-    }
-
-
-
-
-
-.video-background {
-  background-image: url("images/overlay.png");
-  
-  position: fixed;
-  top: 0; right: 0; bottom: 0; left: 0;
-  z-index: -99;
-}
-.video-foreground,
-.video-background iframe {
-  background-image: url("images/overlay.png");
-  ;
-  
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-}
-
-.bgvid {
-    
-    width: 100%; 
-    height: 100%;
-    position: relative;
-    left: 0;
-    top: 0;
-    z-index: -1;
-}
-#portfolio {
-  background-image: url("images/overlay.png"));
-  
-  
-  background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: 50% 50%;
-    color: white;
-    font-family: "Avenir Next", Arial, Helvetica, sans-serif;
-    text-align: center;
-    
-
-}
-#portfolio h2{
-  color:#fff;
-}
-
-#portfolio h4{
-  color:#fff;
-}
-
-.img-responsive {
-  padding: 5px;
-}
-@media (min-aspect-ratio: 16/9) {
-  .video-foreground { height: 300%; top: -100%; }
-}
-@media (max-aspect-ratio: 16/9) {
-  .video-foreground { width: 300%; left: -100%; }
-}
-
-
 body {
       font: 400 15px Lato, sans-serif;
       line-height: 1.8;
@@ -236,7 +138,6 @@ body {
       text-transform: uppercase;
       color: #303030;
       font-weight: 600;
-      margin-bottom: 30px;
   }
   h4 {
       font-size: 19px;
@@ -245,57 +146,101 @@ body {
       font-weight: 400;
       margin-bottom: 30px;
   }
-  
- .banner-h1 {
+
+.jumbotron {
+  background-color: #191919;
   color: #fff;
-  
-  
-  font-style: !important;
-  
+  padding: 100px 25px;
+  font-family: Montserrat, sans-serif;
 }
+
+#banner, h2, h4 {
+  color: #fff;
+  margin-bottom: 20px;
+}  
 
 #banner.container-fluid {
-    padding-bottom: 200px;
-    padding-top: 200px;
+    height: 700px;
 }
 
-  .jumbotron {
-      background-color: #000;
-      opacity:.7;
-      color: #fff;
-      padding: 100px 25px;
-      font-family: Montserrat, sans-serif;
-   
-  }
-  .container-fluid {
-      padding: 60px 50px;
-  }
-  .bg-grey {
-      background-color: #f6f6f6;
-  }
-  .logo-small {
-      color: #f4511e;
-      font-size: 50px;
-  }
-  .logo {
-      color: #f4511e;
-      font-size: 200px;
-  }
-  .thumbnail {
-      padding: 0 0 15px 0;
-      border: none;
-      border-radius: 0;
-  }
-  .thumbnail img {
-      width: 100%;
-      height: 100%;
-      margin-bottom: 10px;
-  }
+#title-social {
+  padding-top: 120px;
+}
 
+.social-top {
+  padding-top: 115px;
+}
+
+.video-background {
+  background-image: url("../images/overlay.png");
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: -99;
+}
+
+.video-foreground,
+.video-background iframe {
+  background-image: url("../images/overlay.png");
+  ;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.bgvid {
+    width: 100%; 
+    height: 100%;
+    position: relative;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .video-foreground { height: 300%; top: -100%; }
+}
+@media (max-aspect-ratio: 16/9) {
+  .video-foreground { width: 300%; left: -100%; }
+}
+
+#about {
+  background-color: black;
+  padding-bottom: 50px;
+  padding-top: 20px;
+}
+
+#about h2, #about h4 {
+  color: white;
+  font-weight: lighter;
+}
+
+.fancybox-custom .fancybox-skin {
+      box-shadow: 0 0 50px #222;
+}
+
+#portfolio {
+  background-image: url("../images/moon.jpg");
+  height: 670px; 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  color: white;
+  font-family: "Avenir Next", Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+#portfolio, h2, h4 {
+  color:#fff;
+}
 
 .hovereffect {
   width: 100%;
   height: 100%;
+  margin-bottom: 20px;
   float: left;
   overflow: hidden;
   position: relative;
@@ -386,64 +331,42 @@ body {
   transition-delay: 0.3s;
 }
 
-  .carousel-control.right, .carousel-control.left {
-      background-image: none;
-      color: #f4511e;
-  }
-  .carousel-indicators li {
-      border-color: #f4511e;
-  }
-  .carousel-indicators li.active {
-      background-color: #f4511e;
-  }
-  .item h4 {
-      font-size: 19px;
-      line-height: 1.375em;
-      font-weight: 400;
-      font-style: italic;
-      margin: 70px 0;
-  }
-  .item span {
-      font-style: normal;
-  }
-  .panel {
-      border: 1px solid #f4511e;
-      border-radius:0 !important;
-      transition: box-shadow 0.5s;
-  }
-  .panel:hover {
-      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
-  }
-  .panel-footer .btn:hover {
-      border: 1px solid #f4511e;
-      background-color: #fff !important;
-      color: #f4511e;
-  }
-  .panel-heading {
-      color: #fff !important;
-      background-color: #f4511e !important;
-      padding: 25px;
-      border-bottom: 1px solid transparent;
-      border-top-left-radius: 0px;
-      border-top-right-radius: 0px;
-      border-bottom-left-radius: 0px;
-      border-bottom-right-radius: 0px;
-  }
-  .panel-footer {
-      background-color: white !important;
-  }
-  .panel-footer h3 {
-      font-size: 32px;
-  }
-  .panel-footer h4 {
-      color: #aaa;
-      font-size: 14px;
-  }
-  .panel-footer .btn {
-      margin: 15px 0;
-      background-color: #f4511e;
-      color: #fff;
-  }
+
+/* Paraxify */
+
+.paraxify { background-attachment: fixed; background-position: center center; background-size: cover; }
+.paraxify h2 { padding-top:50px; color:#fff; }
+.paraxify p, .paraxify li, .paraxify h3, .paraxify a { color:#fff; font-size:14px; line-height:1.5; }
+.para-bottom {background-image:url(../images/earth.jpg);}
+
+@media (min-width: 1200px){
+.para-bottom {height: 550px;}
+}
+
+@media (min-width: 992px){
+.para-bottom { height: 500px;}   
+}
+   
+@media (min-width: 768px){
+.para-bottom{display:block;height:450px}
+}
+
+/* END - Paraxify */
+
+footer#footer {
+  background: black;
+  height: 250px;
+}
+
+.social-bot {
+  padding-top: 60px;
+}
+
+#copyright {
+  padding-top: 15px;
+  color: white;
+  font-weight: bold;
+}
 
   footer .glyphicon {
       font-size: 20px;
@@ -494,4 +417,311 @@ body {
     }
   }
 
+ /* Back to Top Start */
+ 
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(45, 45, 45, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 19px;
+    top: 10px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    background: rgba(74, 74, 74, 0.7);
+}
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
+
+
+/* Extra Things */
+body{background: #eee ;font-family: 'Open Sans', sans-serif;}h3{font-size: 30px; font-weight: 400;text-align: center;margin-top: 50px;}h3 i{color: #444;}
+
+/* Back to Top End */ 
+
+/* Progress Bars */
+
+@import url(http://fonts.googleapis.com/css?family=Expletus+Sans);
+
+
+#hp-progress {
+  background-color: white;
+}
+
+#hp-progress li {
+
+  width: 50%;
+  float: left;
+  list-style-type: none;
+  
+  padding-right: 5.3333333%;
+}
+
+#hp-progress li:nth-child(even) { margin-bottom: 5em;}
+
+#hp-progress h2 {
+  margin: 0 0 1.5em;
+  border-bottom: 1px solid #ccc;
+  color: black;
+  padding: 0 0 .25em;
+}
+
+/* Styling an indeterminate progress bar */
+
+progress:not(value) {
+  /* Add your styles here. As part of this walkthrough we will focus only on determinate progress bars. */
+}
+
+/* Styling the determinate progress element */
+
+progress[value] {
+  /* Get rid of the default appearance */
+  appearance: none;
+  
+  /* This unfortunately leaves a trail of border behind in Firefox and Opera. We can remove that by setting the border to none. */
+  border: none;
+  
+  /* Add dimensions */
+  width: 100%; height: 20px;
+  
+  /* Although firefox doesn't provide any additional pseudo class to style the progress element container, any style applied here works on the container. */
+    background-color: whiteSmoke;
+    border-radius: 3px;
+    box-shadow: 0 2px 3px rgba(0,0,0,.5) inset;
+  
+  /* Of all IE, only IE10 supports progress element that too partially. It only allows to change the background-color of the progress value using the 'color' attribute. */
+  color: royalblue;
+  
+  position: relative;
+  margin: 0 0 1.5em; 
+}
+
+/*
+Webkit browsers provide two pseudo classes that can be use to style HTML5 progress element.
+-webkit-progress-bar -> To style the progress element container
+-webkit-progress-value -> To style the progress element value.
+*/
+
+progress[value]::-webkit-progress-bar {
+  background-color: whiteSmoke;
+  border-radius: 3px;
+  box-shadow: 0 2px 3px rgba(0,0,0,.5) inset;
+}
+
+progress[value]::-webkit-progress-value {
+  position: relative;
+  
+  background-size: 35px 20px, 100% 100%, 100% 100%;
+  border-radius:3px;
+  
+  /* Let's animate this */
+  animation: animate-stripes 5s linear infinite;
+}
+
+@keyframes animate-stripes { 100% { background-position: -100px 0; } }
+
+/* Let's spice up things little bit by using pseudo elements. */
+
+progress[value]::-webkit-progress-value:after {
+  /* Only webkit/blink browsers understand pseudo elements on pseudo classes. A rare phenomenon! */
+  content: '';
+  position: absolute;
+  
+  width:5px; height:5px;
+  top:7px; right:7px;
+  
+  background-color: white;
+  border-radius: 100%;
+}
+
+/* Firefox provides a single pseudo class to style the progress element value and not for container. -moz-progress-bar */
+
+progress[value]::-moz-progress-bar {
+  /* Gradient background with Stripes */
+  background-image:
+  -moz-linear-gradient( 135deg,
+                           transparent,
+                           transparent 33%,
+                           rgba(0,0,0,.1) 33%,
+                           rgba(0,0,0,.1) 66%,
+                           transparent 66%),
+    -moz-linear-gradient( top,
+                            rgba(255, 255, 255, .25),
+                            rgba(0,0,0,.2)),
+     -moz-linear-gradient( left, #09c, #f44);
+  
+  background-size: 35px 20px, 100% 100%, 100% 100%;
+  border-radius:3px;
+  
+  /* Firefox doesn't support CSS3 keyframe animations on progress element. Hence, we did not include animate-stripes in this code block */
+}
+
+/* Fallback technique styles */
+.progress-bar {
+  background-color: whiteSmoke;
+  border-radius: 3px;
+  box-shadow: 0 2px 3px rgba(0,0,0,.5) inset;
+
+  /* Dimensions should be similar to the parent progress element. */
+  width: 100%; height:20px;
+}
+
+.progress-bar span {
+  background-color: royalblue;
+  border-radius: 3px;
+  
+  display: block;
+  text-indent: -9999px;
+}
+
+#hp-progress p[data-value] { 
+  
+  position: relative; 
+}
+
+/* The percentage will automatically fall in place as soon as we make the width fluid. Now making widths fluid. */
+
+#hp-progress p[data-value]:after {
+  content: attr(data-value) '%';
+  position: absolute; right:0;
+}
+
+
+
+
+
+.html5::-webkit-progress-value,
+.python::-webkit-progress-value  {
+  /* Gradient background with Stripes */
+  background-image:
+  -webkit-linear-gradient( 135deg,
+                           transparent,
+                           transparent 33%,
+                           rgba(0,0,0,.1) 33%,
+                           rgba(0,0,0,.1) 66%,
+                           transparent 66%),
+    -webkit-linear-gradient( top,
+                            rgba(255, 255, 255, .25),
+                            rgba(0,0,0,.2)),
+     -webkit-linear-gradient( left, #09c, #f44);
+}
+
+.css3::-webkit-progress-value,
+.php::-webkit-progress-value 
+{
+  /* Gradient background with Stripes */
+  background-image:
+  -webkit-linear-gradient( 135deg,
+                           transparent,
+                           transparent 33%,
+                           rgba(0,0,0,.1) 33%,
+                           rgba(0,0,0,.1) 66%,
+                           transparent 66%),
+    -webkit-linear-gradient( top,
+                            rgba(255, 255, 255, .25),
+                            rgba(0,0,0,.2)),
+     -webkit-linear-gradient( left, #09c, #ff0);
+}
+
+.jquery::-webkit-progress-value,
+.node-js::-webkit-progress-value 
+{
+  /* Gradient background with Stripes */
+  background-image:
+  -webkit-linear-gradient( 135deg,
+                           transparent,
+                           transparent 33%,
+                           rgba(0,0,0,.1) 33%,
+                           rgba(0,0,0,.1) 66%,
+                           transparent 66%),
+    -webkit-linear-gradient( top,
+                            rgba(255, 255, 255, .25),
+                            rgba(0,0,0,.2)),
+     -webkit-linear-gradient( left, #09c, #690);
+}
+
+/* Similarly, for Mozillaa. Unfortunately combining the styles for different browsers will break every other browser. Hence, we need a separate block. */
+
+.html5::-moz-progress-bar,
+.php::-moz-progress-bar {
+  /* Gradient background with Stripes */
+  background-image:
+  -moz-linear-gradient( 135deg,
+                           transparent,
+                           transparent 33%,
+                           rgba(0,0,0,.1) 33%,
+                           rgba(0,0,0,.1) 66%,
+                           transparent 66%),
+    -moz-linear-gradient( top,
+                            rgba(255, 255, 255, .25),
+                            rgba(0,0,0,.2)),
+     -moz-linear-gradient( left, #09c, #f44);
+}
+
+.css3::-moz-progress-bar,
+.php::-moz-progress-bar {
+{
+  /* Gradient background with Stripes */
+  background-image:
+  -moz-linear-gradient( 135deg,
+                           transparent,
+                           transparent 33%,
+                           rgba(0,0,0,.1) 33%,
+                           rgba(0,0,0,.1) 66%,
+                           transparent 66%),
+    -moz-linear-gradient( top,
+                            rgba(255, 255, 255, .25),
+                            rgba(0,0,0,.2)),
+     -moz-linear-gradient( left, #09c, #ff0);
+}
+
+.jquery::-moz-progress-bar,
+.node-js::-moz-progress-bar {
+  /* Gradient background with Stripes */
+  background-image:
+  -moz-linear-gradient( 135deg,
+                           transparent,
+                           transparent 33%,
+                           rgba(0,0,0,.1) 33%,
+                           rgba(0,0,0,.1) 66%,
+                           transparent 66%),
+    -moz-linear-gradient( top,
+                            rgba(255, 255, 255, .25),
+                            rgba(0,0,0,.2)),
+     -moz-linear-gradient( left, #09c, #690);
+}
+
+/* Now we are good to duplicate html code for other skills and then add the css code for the new skill based on data-skill */
+
+  
+/* THE END */
+
+/* Footer */
 
