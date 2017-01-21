@@ -154,6 +154,8 @@ body {
   font-family: Montserrat, sans-serif;
 }
 
+#dotted-overlay{background:#000;position:absolute;left:0;top:0;width:100%;height:2160px;min-height:100%;z-index:-1;opacity:.3}
+
 #banner, h2, h4 {
   color: #fff;
   margin-bottom: 20px;
@@ -221,9 +223,13 @@ body {
       box-shadow: 0 0 50px #222;
 }
 
+.fancybox-inner h2, .fancybox-inner h4 {
+  color: black;
+}
+
 #portfolio {
   background-image: url("../images/moon.jpg");
-  height: 670px; 
+  height: auto;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -231,6 +237,8 @@ body {
   color: white;
   font-family: "Avenir Next", Arial, Helvetica, sans-serif;
   text-align: center;
+  padding-bottom: 40px;
+  padding-top: 40px;
 }
 
 #portfolio, h2, h4 {
@@ -275,7 +283,7 @@ body {
   position: relative;
 }
 
-.hovereffect h2 {
+.hovereffect h2, .overlay a{
   text-transform: uppercase;
   color: #fff;
   text-align: center;
@@ -337,25 +345,25 @@ body {
 .paraxify { background-attachment: fixed; background-position: center center; background-size: cover; }
 .paraxify h2 { padding-top:50px; color:#fff; }
 .paraxify p, .paraxify li, .paraxify h3, .paraxify a { color:#fff; font-size:14px; line-height:1.5; }
+.para-top {background-image:url(../images/about-cover.jpg);}
 .para-bottom {background-image:url(../images/earth.jpg);}
-
 @media (min-width: 1200px){
-.para-bottom {height: 550px;}
+.para-bottom, .para-top {height: 550px;}
 }
 
 @media (min-width: 992px){
-.para-bottom { height: 500px;}   
+.para-bottom, .para-top { height: 500px;}   
 }
    
 @media (min-width: 768px){
-.para-bottom{display:block;height:450px}
+.para-bottom, .para-top{display:block;height:450px}
 }
 
 /* END - Paraxify */
 
 footer#footer {
   background: black;
-  height: 250px;
+  height: 175px;
 }
 
 .social-bot {
@@ -377,8 +385,8 @@ footer#footer {
   .slide {
       animation-name: slide;
       -webkit-animation-name: slide;
-      animation-duration: 1s;
-      -webkit-animation-duration: 1s;
+      animation-duration: 1.5s;
+      -webkit-animation-duration: 1.5s;
       visibility: visible;
   }
   @keyframes slide {
@@ -472,25 +480,36 @@ body{background: #eee ;font-family: 'Open Sans', sans-serif;}h3{font-size: 30px;
 
 
 #hp-progress {
+  /*background-image: url("../images/space.jpg"); */
   background-color: white;
+  padding-top: 60px;
 }
 
 #hp-progress li {
-
   width: 50%;
   float: left;
   list-style-type: none;
-  
   padding-right: 5.3333333%;
+}
+
+@media (max-width: 767px) {
+
+#hp-progress li {
+  width: 100%;
+}
+
 }
 
 #hp-progress li:nth-child(even) { margin-bottom: 5em;}
 
 #hp-progress h2 {
-  margin: 0 0 1.5em;
-  border-bottom: 1px solid #ccc;
   color: black;
-  padding: 0 0 .25em;
+  padding: 0 0 2em;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 2em;
+  padding-left: 0px;
+  margin: 0 auto;
 }
 
 /* Styling an indeterminate progress bar */
@@ -575,7 +594,7 @@ progress[value]::-moz-progress-bar {
     -moz-linear-gradient( top,
                             rgba(255, 255, 255, .25),
                             rgba(0,0,0,.2)),
-     -moz-linear-gradient( left, #09c, #f44);
+     -moz-linear-gradient( left, #FF2D00, #12ff2d);
   
   background-size: 35px 20px, 100% 100%, 100% 100%;
   border-radius:3px;

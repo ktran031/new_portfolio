@@ -1,11 +1,11 @@
 $(document).ready(function(){
 
-
+  // Jumbotron fade out on scroll
 $(window).scroll(function(){
     $(".jumbotron").css("opacity", 1 - $(window).scrollTop() / 250);
   });
 
-    
+  // fancy box   
   $("a#inline").fancybox({
         'hideOnContentClick': true
     });
@@ -42,6 +42,8 @@ $(window).scroll(function(){
         }
     });
   });
+
+  
 
 // ===== Scroll to Top ==== 
 $(window).scroll(function() {
