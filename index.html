@@ -46,14 +46,18 @@
   </div>
 </nav>
     
-<div class="jumbotron container-fluid text-center">
+<div class="jumbotron container-fluid text-center hidden-sm hidden-xs">
   <h1>Be Part of My Universe</h1>
 </div>
 
 <div id="banner" class="text-center container-fluid">
 <div id="dotted-overlay"></div>
 
-  <div class="video-background">
+  <video autoplay="" loop="" muted="" id="bgvid">
+    <source src="video/bgvideo-1.mp4" type="video/mp4">
+    <source src="video/bgvideo-1.mp4" type="video/webm">
+  </video>
+  <!--<div class="video-background">
   <div class="video-foreground">
       <video class="bgvid" video loop muted autoplay>
         <source src="video/bgvideo-1.mp4" type="video/mp4">
@@ -61,7 +65,7 @@
         <source src="video/bgvideo-1.mov" type="video/mov">  
       </video>
    </div>
-  </div>
+  </div>-->
 
   <div id="title-social" class="row">
     <div class="col-sm-12">
@@ -69,7 +73,7 @@
       <h2>Khoi Tran</h2>
       <h2>Front End Web Developer</h2>
       </div>
-        <div class="social-top slideanim social-buttons pull-right hidden-xs hidden-sm">
+        <div class="social-top slideanim social-buttons pull-right">
           <a href="#" class="social-button facebook"><i class="fa fa-facebook"></i></a>
           <a href="#" class="social-button twitter"><i class="fa fa-linkedin"></i></a>
           <a href="#" class="social-button google"><i class="fa fa-instagram"></i></a>
@@ -92,7 +96,7 @@
 </div>
 
 <!-- Paraxify -->
-<div id="paraxify" class="paraxify text-left para-top"></div>
+<div id="paraxify" class="paraxify text-left para-top hidden-xs"></div>
 <!-- END: Paraxify -->
 
 <!-- Container (Portfolio Section) -->
@@ -362,14 +366,14 @@
 </div>
 
 <!-- Paraxify -->
-<div id="paraxify" class="paraxify text-left para-bottom"></div>
+<div id="paraxify" class="paraxify text-left para-bottom hidden-xs"></div>
 <!-- END: Paraxify -->
 
 <footer id="footer" class="container-fluid text-center">
 
   <div class="row">
     <div class="col-sm-12">
-        <div class="social-bot social-buttons pull-right hidden-xs hidden-sm">
+        <div class="social-bot social-buttons pull-right">
           <a href="#" class="social-button facebook"><i class="fa fa-facebook"></i></a>
           <a href="#" class="social-button twitter"><i class="fa fa-linkedin"></i></a>
           <a href="#" class="social-button google"><i class="fa fa-instagram"></i></a>

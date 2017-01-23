@@ -33,12 +33,6 @@ hr {
     color: #fff !important;
 }
 
-#banner .social-button {
-  opacity: .7;
-  background-color: #000;
-  
- }
-
 .social-buttons {
   
   margin: auto;
@@ -128,6 +122,14 @@ hr {
           transform: scale(1);
 }
 
+@media (max-width: 768px){
+.social-button {
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  }
+}
+
 body {
       font: 400 15px Lato, sans-serif;
       line-height: 1.8;
@@ -148,22 +150,63 @@ body {
   }
 
 .jumbotron {
-  background-color: #191919;
+  background-color: #000;
   color: #fff;
   padding: 100px 25px;
+  margin-bottom: 0px;
   font-family: Montserrat, sans-serif;
 }
+
+/* Banner Start */
+
+#banner .social-button {
+  opacity: .7;
+  background-color: #000;
+  
+ }
+
+ #banner.container-fluid {
+  background:url(../images/space.jpg) center no-repeat;
+  background-size:auto;
+  height:auto;
+  min-height:500px;
+  padding-bottom:40px;
+  width:100%;
+  position:relative
+ }
+
+/* Banner Responsive */
+
+@media (min-width: 1200px){
+#banner.container-fluid {
+    background-image: none;
+    min-height: 600px;
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 992px){
+#banner.container-fluid {
+    min-height: 500px;
+  }
+}
+
+ @media (min-width: 768px){
+#banner.container-fluid {
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    min-height: 535px;
+  }
+}
+
+/* Banner Responsive End */
 
 #dotted-overlay{background:#000;position:absolute;left:0;top:0;width:100%;height:2160px;min-height:100%;z-index:-1;opacity:.3}
 
 #banner, h2, h4 {
   color: #fff;
-  margin-bottom: 20px;
 }  
-
-#banner.container-fluid {
-    height: 700px;
-}
 
 #title-social {
   padding-top: 120px;
@@ -172,6 +215,21 @@ body {
 .social-top {
   padding-top: 115px;
 }
+
+#bgvid {
+    margin: auto;
+    position: absolute;
+    z-index: -100;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    visibility: visible;
+    width: 1905px;
+    max-width: 100%;
+    height: auto;
+    border-bottom: 5px solid #000;
+}
+
 
 .video-background {
   background-image: url("../images/overlay.png");
@@ -636,8 +694,9 @@ progress[value]::-moz-progress-bar {
 
 
 
+
 .html5::-webkit-progress-value,
-.python::-webkit-progress-value  {
+.bootstrap::-webkit-progress-value  {
   /* Gradient background with Stripes */
   background-image:
   -webkit-linear-gradient( 135deg,
@@ -652,6 +711,7 @@ progress[value]::-moz-progress-bar {
      -webkit-linear-gradient( left, #09c, #f44);
 }
 
+.person-skill::-webkit-progress-value,
 .css3::-webkit-progress-value,
 .php::-webkit-progress-value 
 {
@@ -670,7 +730,7 @@ progress[value]::-moz-progress-bar {
 }
 
 .jquery::-webkit-progress-value,
-.node-js::-webkit-progress-value 
+.modx::-webkit-progress-value 
 {
   /* Gradient background with Stripes */
   background-image:
@@ -688,7 +748,6 @@ progress[value]::-moz-progress-bar {
 
 /* Similarly, for Mozillaa. Unfortunately combining the styles for different browsers will break every other browser. Hence, we need a separate block. */
 
-.html5::-moz-progress-bar,
 .php::-moz-progress-bar {
   /* Gradient background with Stripes */
   background-image:
