@@ -1,6 +1,6 @@
 
 /* Reset */
-@import url(//codepen.io/chrisdothtml/pen/ojLzJK.css);
+
 
 hr {
   width: 20%;
@@ -134,6 +134,7 @@ body {
       font: 400 15px Lato, sans-serif;
       line-height: 1.8;
       color: #818181;
+      background-color: black!important; 
   }
   h2 {
       font-size: 24px;
@@ -166,13 +167,14 @@ body {
  }
 
  #banner.container-fluid {
-  background:url(../images/space.jpg) center no-repeat;
+  background:url(../images/milky.jpg) center no-repeat;
   background-size:auto;
   height:auto;
   min-height:535px;
   padding-bottom:40px;
   width:100%;
-  position:relative
+  position:relative;
+  background-position: 62% 17%;
  }
 
 /* Banner Responsive */
@@ -419,6 +421,8 @@ body {
 
 /* END - Paraxify */
 
+/* Footer Start */
+
 footer#footer {
   background: black;
   height: 175px;
@@ -476,12 +480,17 @@ footer#footer {
         width: 100%;
         margin-bottom: 35px;
     }
+    footer#footer {
+      height: 140px;
+    }
   }
   @media screen and (max-width: 480px) {
     .logo {
         font-size: 150px;
     }
   }
+
+ /* Footer Ends */
 
  /* Back to Top Start */
  
@@ -528,7 +537,7 @@ footer#footer {
 
 
 /* Extra Things */
-body{background: #eee ;font-family: 'Open Sans', sans-serif;}h3{font-size: 30px; font-weight: 400;text-align: center;margin-top: 50px;}h3 i{color: #444;}
+body{background: #eee ;font-family: 'Open Sans'!important, sans-serif!important;}h3{font-size: 30px; font-weight: 400;text-align: center;margin-top: 50px;}h3 i{color: #444;}
 
 /* Back to Top End */ 
 
