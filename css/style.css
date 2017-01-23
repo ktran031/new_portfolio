@@ -82,6 +82,18 @@ hr {
   -webkit-transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
   transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
 }
+.social-button.github:before {
+  background-color: #563D7C;
+}
+.social-button.github .fa {
+  color: #563D7C;
+}
+.social-button.freecodecamp:before {
+  background-color: #006400;
+}
+.social-button.freecodecamp .fa {
+  color: #006400;
+}
 .social-button.facebook:before {
   background-color: #3B5998;
 }
@@ -166,7 +178,7 @@ body {
   
  }
 
- #banner.container-fluid {
+ #banner {
   background:url(../images/milky.jpg) center no-repeat;
   background-size:auto;
   height:auto;
@@ -179,8 +191,14 @@ body {
 
 /* Banner Responsive */
 
+@media (min-width: 1800px) {
+#banner {
+    min-height: 845px;
+  }
+}
+
 @media (min-width: 1200px){
-#banner.container-fluid {
+#banner {
     background-image: none;
     min-height: 600px;
     overflow: hidden;
@@ -188,16 +206,21 @@ body {
 }
 
 @media (min-width: 992px){
-#banner.container-fluid {
+#banner {
     min-height: 500px;
   }
 }
 
  @media (min-width: 768px){
-#banner.container-fluid {
+#banner {
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
+  }
+}
+
+ @media (min-width: 768px){
+#banner {
     min-height: 535px;
   }
 }
