@@ -191,14 +191,14 @@ body {
 
 /* Banner Responsive */
 
-@media (min-width: 1800px) {
-#banner {
+@media (min-width: 1800px){
+#banner, #myPage #banner{
     min-height: 845px;
   }
 }
 
 @media (min-width: 1200px){
-#banner {
+#banner, #myPage #banner {
     background-image: none;
     min-height: 600px;
     overflow: hidden;
@@ -206,13 +206,13 @@ body {
 }
 
 @media (min-width: 992px){
-#banner {
+#banner, #myPage #banner {
     min-height: 500px;
   }
 }
 
  @media (min-width: 768px){
-#banner {
+#banner, #myPage #banner {
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
@@ -220,7 +220,7 @@ body {
 }
 
  @media (min-width: 768px){
-#banner {
+#banner, #myPage #banner {
     min-height: 535px;
   }
 }
