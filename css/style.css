@@ -334,10 +334,10 @@ body {
   color:#fff;
 }
 
-.p-wrapper h2{
+/*.p-wrapper h2{
 border-bottom: 1px solid white;
 margin-bottom: 15px;
-}
+}*/
 .hovereffect {
   width: 100%;
   height: 100%;
@@ -578,7 +578,10 @@ body{background: #eee ;font-family: 'Open Sans'!important, sans-serif!important;
 
 @import url(http://fonts.googleapis.com/css?family=Expletus+Sans);
 
-#hp-progress hr {color: black;}
+#hp-progress hr {
+  color: black;
+  border-top: 1px solid #000;
+}
 #hp-progress {
   /*background-image: url("../images/space.jpg"); */
   background-color: white;
@@ -604,10 +607,8 @@ body{background: #eee ;font-family: 'Open Sans'!important, sans-serif!important;
 
 #hp-progress h2 {
   color: black;
-  padding: 0 0 2em;
   padding-top: 0px;
   padding-right: 0px;
-  padding-bottom: 2em;
   padding-left: 0px;
   margin: 0 auto;
 }
