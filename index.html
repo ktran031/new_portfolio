@@ -13,19 +13,11 @@
       <!-- Bootstrap -->
       <link href="css/bootstrap.min.css" rel="stylesheet">
       <link rel="stylesheet" type="text/css" href="css/style.css">
-
-      
-
-      <!-- FANCY BOXX -->
-
-
-
-
 	</head>
-	<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
-    
-    
-    
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<!-- Nav Bar -->    
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
@@ -46,7 +38,8 @@
     </div>
   </div>
 </nav>
-    
+
+<!-- Jumbotron -->    
 <div class="jumbotron container-fluid text-center hidden-sm hidden-xs">
   <h1>Be Part of My Universe</h1>
 </div>
@@ -69,7 +62,8 @@
       </video>
    </div>
   </div>-->
-
+  
+  <!-- Intro -->
   <div id="title-social" class="row">
     <div class="col-sm-12">
       <div class="banner-title">
@@ -93,7 +87,7 @@
   <div class="row slideanim">
     <div class="col-sm-12">
       <h2>About Me</h2><hr />
-       <h4>My name is Khoi Tran and I’m a web designer/developer that is currently looking for new and challenging projects. <br />I began studying Web Design at an SEO company, landing my first job as a WordPress Web Designer.<br /> I recently graduated from the Front-End Web Development program at General Assembly.<br />I graduated from the University of California, Riverside with a B.A. in Sociology, and found my passion for web design/development<br /> reignited after helping several colleagues with their own up and coming websites.<br /> When I’m not hard at work developing new projects, you can find me at the gym trying to maintain an active <br />and healthy lifestyle where I can challenge myself physically and mentally!</h4>
+       <h4>My name is Khoi Tran and I’m a front-end web developer that is currently looking for new and challenging projects. <br />I began studying Web Design at an SEO company, landing my first job as a WordPress Web Designer.<br /> I recently graduated from the Front-End Web Development program at General Assembly.<br />I graduated from the University of California, Riverside with a B.A. in Sociology, and found my passion for web development<br /> reignited after helping several colleagues with their own up and coming websites.<br /> When I’m not hard at work developing new projects, you can find me at the gym trying to maintain an active <br />and healthy lifestyle where I can challenge myself physically and mentally!</h4>
       <img src="images/khoi.jpg" class="img-circle img-responsive logo center-block" alt="khoi" width="250" height="250">
     </div>
   </div>
@@ -103,12 +97,28 @@
 <div id="paraxify" class="paraxify text-left para-top hidden-xs hidden-sm"></div>
 <!-- END: Paraxify -->
 
-<!-- Container (Portfolio Section) -->
-
+<!-- Portfolio -->
 <div id="portfolio" class="container-fluid text-center">
   <h2>Portfolio</h2><hr />
   <h4>Below you can find websites that I contributed to and was heavily involved in thus far. <br />These projects demonstrate my skills using<br /> Adobe Photoshop, HTML, CSS, Javascript, jQuery, PHP, and WordPress.</h4>
   <div class="row slideanim text-center">
+
+  <div class="p-wrapper col-lg-3 col-md-4 col-sm-6 col-xs-12"><h2>DC Auto Auction</h2>
+    <div class="hovereffect">
+        <img class="img-responsive" src="images/portfolio_dcauto.jpg" alt="">
+            <div class="overlay">
+                <h2>DC Auto Auction</h2>
+                  <p><a id="inline" href="#dcauto">More Info</a>
+                    <div style="display:none">
+                      <div id="dcauto">
+                    <h2>DC Auto Auction</h2>
+                  <a target="_blank" href="http://www.dcautoauction.com/"><img class="img-responsive" src="images/portfolio_dcauto.jpg" alt=""></a>
+              </div>
+            </div>
+          </p> 
+      </div>
+    </div>
+  </div>
 
   <div class="p-wrapper col-lg-3 col-md-4 col-sm-6 col-xs-12"><h2>Mikelson Yachts</h2>
     <div class="hovereffect">
@@ -178,23 +188,6 @@
     </div>
   </div>
 
-  <div class="p-wrapper col-lg-3 col-md-4 col-sm-6 col-xs-12"><h2>DTC Transport LLC</h2>
-    <div class="hovereffect">
-        <img class="img-responsive" src="images/portfolio_dtc.jpg" alt="">
-            <div class="overlay">
-                <h2>DTC Transport LLC</h2>
-                  <p><a id="inline" href="#DTC">More Info</a>
-                    <div style="display:none">
-                      <div id="DTC">
-                    <h2>DTC Transport LLC</h2>
-                  <a target="_blank" href="http://www.heavyequipmenthaulingportland.com/"><img class="img-responsive" src="images/portfolio_dtc.jpg" alt=""></a>
-              </div>
-            </div>
-          </p> 
-      </div>
-    </div>
-  </div>
-
   <div class="p-wrapper col-lg-3 col-md-4 col-sm-6 col-xs-12"><h2>Yark BMW</h2>
     <div class="hovereffect">
         <img class="img-responsive" src="images/portfolio_yark.jpg" alt="">
@@ -248,7 +241,6 @@
 
 	<br>
 
-  
   </div>
 </div>
 
@@ -280,6 +272,7 @@
   </div>
 </div>-->
 
+<!-- Progres Bar -->
 <div id="hp-progress" class="container-fluid">
 <h2 class="text-center">My Skill Set</h2><hr />
   <div class="col-sm-12 slideanim">
@@ -288,7 +281,7 @@
   <li>
 
       <!-- Me -->
-    <p style="width:100%" data-value="100">Being Awesome</p>
+    <p style="width:100%" data-value="100">Getting Jobs Done</p>
     <progress max="100" value="100" class="person-skill">
       <!-- Browsers that support HTML5 progress element will ignore the html inside `progress` element. Whereas older browsers will ignore the `progress` element and instead render the html inside it. -->
       <div class="progress-bar">
@@ -332,8 +325,9 @@
       <div class="progress-bar">
         <span style="width: 75%">75%</span>
       </div>
+    </progress>    
 
-    </progress>     <!-- MODX -->
+    <!-- MODX -->
     <p style="width:70%" data-value="70">MODX</p>
     <progress max="100" value="70" class="modx">
       <!-- Browsers that support HTML5 progress element will ignore the html inside `progress` element. Whereas older browsers will ignore the `progress` element and instead render the html inside it. -->
@@ -360,8 +354,6 @@
       </div>
     </progress>   
 
-    
-    
   </li>
 </ul>
 
@@ -373,6 +365,7 @@
 <div id="paraxify" class="paraxify text-left para-bottom hidden-xs hidden-sm"></div>
 <!-- END: Paraxify -->
 
+<!-- Footer -->
 <footer id="footer" class="container-fluid text-center">
 
   <div class="row">
@@ -388,6 +381,7 @@
   </div>
     <p id="copyright">K|T ©2017</p>
 </footer>
+
 <!-- Return to Top -->
 <a href="javascript:" id="return-to-top"><i class="fa fa-angle-double-up" aria-hidden="true"></i>
 </i></a>
@@ -405,6 +399,11 @@
     myParaxify = paraxify('.paraxify');
   }
 })();</script>
+<!-- Starts the video at 15 seconds -->
+<script>
+document.getElementById("bgvid").currentTime = 15;
+</script>
+
 </body>
     
     
